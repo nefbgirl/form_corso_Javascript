@@ -39,10 +39,12 @@ input[type=button]:hover {
 label.required::before {
   content: '*';
   margin-right: 4px;
+  font-size: 26px;
   color: red;
 }
 label.notrequired::before {
   content: '*';
   margin-right: 4px;
+  font-size: 26px;
   color: grey;
 }
