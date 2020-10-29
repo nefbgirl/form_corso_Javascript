@@ -12,18 +12,19 @@
 
 
 	<div class="container">
-		<form>
+		<form name="form1" action="#" onsubmit="required()">
 			<h3>Contact Form</h3>
-			<label for="fname">First Name</label>
-			<input type="text" id="fname" name="firstname" placeholder="Your name..">
+			<label id="labelFname" for="fname">First Name</label>
+			<input type="text" id="fname" name="firstname" placeholder="Your name..."   
+      onchange="checkMandatory()" >
 
-			<label for="lname">Last Name</label>
-			<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+			<label id="labelLname" for="lname">Last Name</label>
+			<input type="text" id="lname" name="lastname" placeholder="Your last name.."
+      onchange="checkMandatory()">
 
 			<label for="country">Country</label>
 			<select id="country" name="country">
-      <option value="select">Select</option>
-      <option value="italy">Italy</option>
+      <option value="italy" selected>Italy</option>
       <option value="canada">Canada</option>
       <option value="usa">USA</option>
     </select>
